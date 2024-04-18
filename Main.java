@@ -3,9 +3,14 @@ public class Main {
         System.out.println(findFibonacciSum(4));
         System.out.println(findFibonacciSum(3));
         System.out.println(findFibonacciSum(10));
+        System.out.println(findFibonacciSum(2));
         System.out.println(findGcd(10, 15));
         System.out.println(findGcd(14, 28));
         System.out.println(findGcd(3, 9));
+        System.out.println(findGcd(4, 8));
+        System.out.println(findGcdOfTwoFibonacciSums(4, 3));
+        System.out.println(findGcdOfTwoFibonacciSums(10, 15));
+        System.out.println(findGcdOfTwoFibonacciSums(14, 28));
     }
 
     public static int findFibonacciSum(int n) {
@@ -15,8 +20,6 @@ public class Main {
         if (n <= 0) {
             return 0;
         } else if (n == 1) {
-            return 1;
-        } else if (n == 2) {
             return 1;
         }
         // Calculate the sum of the Fibonacci sequence up to the nth number
@@ -37,6 +40,9 @@ public class Main {
         return findGcd(b, a % b);
     }
 
-
+    public static int findGcdOfTwoFibonacciSums(int n, int m) {
+        // Find the GCD of two values and find the sum of the Fibonacci sequence up to the GCD
+        return findGcd(findFibonacciSum(n), findFibonacciSum(m));
+    }
 }
     
