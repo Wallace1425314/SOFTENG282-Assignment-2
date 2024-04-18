@@ -3,6 +3,9 @@ public class Main {
         System.out.println(findFibonacciSum(4));
         System.out.println(findFibonacciSum(3));
         System.out.println(findFibonacciSum(10));
+        System.out.println(findGcd(10, 15));
+        System.out.println(findGcd(14, 28));
+        System.out.println(findGcd(3, 9));
     }
 
     public static int findFibonacciSum(int n) {
