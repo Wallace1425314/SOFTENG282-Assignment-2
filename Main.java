@@ -26,5 +26,14 @@ public class Main {
         return sum;
     }
 
+    public static int findGcd(int a, int b) {
+        // Find the GCD of two numbers by using the Euclidean algorithm
+        if (b == 0) {
+            return a;
+        }
+        return findGcd(b, a % b);
+    }
+
+
 }
     
