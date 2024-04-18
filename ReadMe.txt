@@ -1,4 +1,20 @@
-The code will first find the sum of the first n and m numbers in the Fibonacci sequence, then it will find the GDC of these two numbers using the Euclidean algorithm.
+GitHub Repository: https://github.com/Wallace1425314/SOFTENG282-Assignment-2.git
+The code will first find the sum of the first n and m numbers in the Fibonacci sequence, it does this by usine a for loop and calculating the next value of the sequence and adds it to a total sum. then it will find the GDC of these two numbers using the Euclidean algorithm. I did not check if a < b for the euclidean algorithm because if a < b the second recursion of the function would become gcd(b, a) which would then continue like normal.
+
+for example, if the input was 3 and 4.
+
+Sum of the first 3 Fibonacci numbers:
+0 + 1 + 1 = 2
+Sum of the first 4 Fibonacci numbers:
+0 + 1 + 1 + 2 = 4
+
+GCD of 2 and 4:
+gcd(2,4)
+gcd(4,2)
+gcd(2, 0)
+Therefore, gcd of 2 and 4 = 2
+
+
 
 
 How to compile and run:
